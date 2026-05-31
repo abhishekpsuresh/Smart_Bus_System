@@ -1,0 +1,573 @@
+.seat-selection-page{
+
+  min-height:100vh;
+
+  background:#000;
+
+  color:white;
+
+  padding:30px 20px;
+
+}
+
+.seat-selection-container{
+
+  max-width:1500px;
+
+  margin:auto;
+
+  background:#09090b;
+
+  border:1px solid #27272a;
+
+  border-radius:32px;
+
+  padding:35px;
+
+}
+
+/*
+==================================================
+TOP
+==================================================
+*/
+
+.seat-top{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-bottom:35px;
+
+}
+
+.seat-title{
+
+  font-size:42px;
+
+  font-weight:900;
+
+  color:white;
+
+  margin-bottom:10px;
+
+}
+
+.seat-subtitle{
+
+  color:#a1a1aa;
+
+  font-size:16px;
+
+}
+
+/*
+==================================================
+DRIVER
+==================================================
+*/
+
+.driver-section{
+
+  display:flex;
+
+  justify-content:flex-end;
+
+  margin-bottom:30px;
+
+  color:#fff;
+
+  font-size:18px;
+
+  font-weight:700;
+
+}
+
+/*
+==================================================
+HEADER
+==================================================
+*/
+
+.deck-header-row{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:80px;
+
+  margin-bottom:30px;
+
+}
+
+.deck-title{
+
+  text-align:center;
+
+  font-size:24px;
+
+  font-weight:800;
+
+  color:#ff2b3d;
+
+}
+
+/*
+==================================================
+ROWS
+==================================================
+*/
+
+.seat-rows{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:22px;
+
+}
+
+.seat-row{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:80px;
+
+}
+
+/*
+==================================================
+DECK
+==================================================
+*/
+
+.deck-side{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:25px;
+
+  background:#111111;
+
+  border:1px solid #27272a;
+
+  border-radius:24px;
+
+  padding:20px;
+
+}
+
+.single-seat{
+
+  width:90px;
+
+  display:flex;
+
+  justify-content:center;
+
+}
+
+.double-seat{
+
+  display:flex;
+
+  gap:14px;
+
+}
+
+.aisle{
+
+  flex:1;
+
+  text-align:center;
+
+  color:#71717a;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+}
+
+/*
+==================================================
+SEAT CARD
+==================================================
+*/
+
+.seat-card{
+
+  width:50px;
+
+  height:110px;
+
+  border-radius:10px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  cursor:pointer;
+
+  transition:0.25s;
+
+  border:1px solid transparent;
+
+  user-select:none;
+
+}
+
+.seat-number{
+
+  font-size:13px;
+
+  font-weight:800;
+
+}
+
+/*
+==================================================
+AVAILABLE
+==================================================
+*/
+
+.seat-card.available{
+
+  background:#18181b;
+
+  border-color:#3f3f46;
+
+  color:white;
+
+}
+
+.seat-card.available:hover{
+
+  border-color:#ff2b3d;
+
+  transform:translateY(-3px);
+
+}
+
+/*
+==================================================
+SELECTED
+==================================================
+*/
+
+.seat-card.selected{
+
+  background:#ff2b3d;
+
+  color:white;
+
+}
+/*
+==================================================
+BOOKED
+==================================================
+*/
+
+.seat-card.booked{
+
+  background:#3f3f46;
+
+  color:#d4d4d8;
+
+  cursor:not-allowed;
+
+  opacity:0.6;
+
+}
+
+/*
+==================================================
+LOCKED
+==================================================
+*/
+
+.seat-card.locked{
+
+  background:#eab308;
+
+  color:black;
+
+  cursor:not-allowed;
+
+}
+
+/*
+==================================================
+WOMEN ONLY
+==================================================
+*/
+
+.seat-card.women{
+
+  background:#ec4899;
+
+  color:white;
+
+}
+
+/*
+==================================================
+SUMMARY
+==================================================
+*/
+
+.booking-summary{
+
+  margin-top:40px;
+
+  background:#111111;
+
+  border:1px solid #27272a;
+
+  border-radius:24px;
+
+  padding:30px;
+
+}
+
+.summary-title{
+
+  font-size:26px;
+
+  font-weight:800;
+
+  margin-bottom:20px;
+
+  color:#ff2b3d;
+
+}
+
+.selected-seats{
+
+  color:white;
+
+  margin-top:10px;
+
+  font-size:17px;
+
+}
+
+.summary-button{
+
+  margin-top:30px;
+
+  width:100%;
+
+  height:60px;
+
+  border:none;
+
+  border-radius:22px;
+
+  background:#ff2b3d;
+
+  color:white;
+
+  font-size:18px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.25s;
+
+}
+
+.summary-button:hover{
+
+  background:#e11d30;
+
+}
+
+/*
+==================================================
+LEGEND
+==================================================
+*/
+
+.legend{
+
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:25px;
+
+}
+
+.legend-item{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:#a1a1aa;
+
+  font-size:14px;
+
+}
+
+.legend-color{
+
+  width:18px;
+
+  height:18px;
+
+  border-radius:6px;
+
+}
+
+.legend-available{
+
+  background:#18181b;
+
+  border:1px solid #3f3f46;
+
+}
+
+.legend-selected{
+
+  background:#ff2b3d;
+
+}
+
+.legend-booked{
+
+  background:#3f3f46;
+
+}
+
+.legend-locked{
+
+  background:#eab308;
+
+}
+
+.legend-women{
+
+  background:#ec4899;
+
+}
+
+/*
+==================================================
+RESPONSIVE
+==================================================
+*/
+
+@media(max-width:1200px){
+
+  .seat-row{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+  }
+
+  .deck-header-row{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+  }
+
+}
+
+@media(max-width:768px){
+
+  .seat-selection-container{
+
+    padding:20px;
+
+  }
+
+  .seat-title{
+
+    font-size:30px;
+
+  }
+
+  .deck-side{
+
+    gap:15px;
+
+    padding:15px;
+
+  }
+
+  .seat-card{
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:18px;
+
+  }
+
+  .seat-number{
+
+    font-size:11px;
+
+  }
+
+  .double-seat{
+
+    gap:10px;
+
+  }
+
+}
+.deck-header{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+}
+
+.steering-box{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  color:white;
+
+  margin-right:20px;
+
+}
