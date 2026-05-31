@@ -99,10 +99,6 @@ SmartBusSystem/
 
 ├── database/
 
-├── docs/
-
-├── deployment/
-
 └── README.md
 
 ---
