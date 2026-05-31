@@ -65,14 +65,13 @@ function AuthPage() {
       ) {
 
         const response =
-        await axios.post(
-
-          "http://localhost:5000/api/auth/register",
-
-          signupData
-
-        );
-
+await axios.post(
+  "http://localhost:5000/api/auth/register",
+  {
+    ...signupData,
+    role: "user"
+  }
+);
         toast.success(response.data.message);
 
       }
